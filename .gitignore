@@ -3,12 +3,14 @@
 c++_dsa/
 roadmap/
 
-# 2. Block compiled C++ binaries and build folders
+# 2. Block compiled C++ binaries, build folders, and macOS junk
 *.out
 *.exe
 *.o
 *.obj
+*.dSYM
 *.dSYM/
+**/*.dSYM/
 .DS_Store
 
 # 3. Block extensionless compiled binary files (macOS executable style)
