@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/abhinavupadhyay/DSA/20%_C++",
+      "program": "/Users/abhinavupadhyay/DSA/20%_C++/build/Debug/outDebug"
+    }
+  ]
+}

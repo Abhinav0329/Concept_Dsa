@@ -1,0 +1,35 @@
+## 🎯 [THE CORE 20%] Data Structures, Algorithmic Syntax, & Vector Foundations
+- 🧱 Basic Programming Constructs (Syllabus Unit I & II)
+  - **Primitive Data Layouts**
+    - High-Speed Numeric Processing: `int`, `long long`
+    - Relational Flag Registers & String Units: `bool`, `char`
+  - **Memory Segment Architecture**
+    - The Stack: Automatic scope allocation & frame lifecycles
+    - The Heap: Explicit execution-space memory manipulation via `new` & `delete`
+  - **Hardware Pointers & Address Maps**
+    - Pointer Variables (`Type* ptr`), Address Extraction (`&`), Value Dereferencing (`*`)
+    - Pointer Errors: Preventing Dangling Pointers, Wild Pointers, and Null Pointer Assignments
+    - Modern Explicit Safety: `nullptr` validation
+    - Reference Variables: Native aliases (`Type& ref`) to modify arguments without copying
+- 🔁 Algorithmic Execution Streams (Syllabus Unit I)
+  - **Conditional Jump Frameworks**
+    - Conditional Trees: `if`, `else if`, `else`
+  - **Iteration Processing Blocks**
+    - Sequential Traversal Engines: `for`, `while`
+    - Mid-Loop Pipeline Controls: `break`, `continue`
+- 📦 Custom Structural Nodes & Layout Formulations (Syllabus Unit I & II)
+  - **Heterogeneous Memory Grouping**
+    - Structural Blueprint Definitions via `struct`
+    - Node Inter-linking Foundations: *Introduction to Self-Referential classes/structs*
+    - Real-world Node Example: `struct Node { int val; Node* next; };`
+- ⚡ The Essential STL Toolbox Subset (Syllabus Unit II & VI)
+  - **Dynamic Contiguous Arrays**
+    - `std::vector<T>`: Amortized $O(1)$ scaling array (`size()`, `capacity()`, `.push_back()`, `.reserve()`)
+  - **Linear String Processing**
+    - `std::string`: Class-defining string models, value modifications, and boundary indexing
+  - **Associative Fast Lookups**
+    - `std::unordered_map<K, V>`: Hashed address calculations for constant-time $O(1)$ search speeds
+    - `std::unordered_set<T>`: Unique elements existence checks in $O(1)$ time
+  - **Restricted Processing Pipes**
+    - `std::stack<T>`: Last-In, First-Out sequence tracking
+    - `std::queue<T>` & `std::priority_queue<T>`: First-In, First-Out pipelines & Max/Min Heap architectures
