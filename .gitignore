@@ -1,24 +1,17 @@
-# 1. Block the specific folders you do not want
+# Ignore specific environment and junk folders
 .vscode/
 c++_dsa/
 roadmap/
+.DS_Store
 
-# 2. Block compiled C++ binaries, build folders, and macOS junk
+# Ignore all dSYM debug folders everywhere
+*.dSYM/
+**/*.dSYM/
+**/**/*.dSYM/
+
+# Ignore compiled binary executables
 *.out
 *.exe
 *.o
 *.obj
-*.dSYM
-*.dSYM/
-**/*.dSYM/
-.DS_Store
-
-# 3. Block extensionless compiled binary files (macOS executable style)
-*
-!*/
-!*.*
-
-# 4. Whitelist only your C++ source files and documentation
-!**/*.cpp
-!**/*.md
 !.gitignore
