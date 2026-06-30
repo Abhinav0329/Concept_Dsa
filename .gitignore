@@ -1,0 +1,22 @@
+# 1. Block the specific folders you do not want
+.vscode/
+c++_dsa/
+roadmap/
+
+# 2. Block compiled C++ binaries and build folders
+*.out
+*.exe
+*.o
+*.obj
+*.dSYM/
+.DS_Store
+
+# 3. Block extensionless compiled binary files (macOS executable style)
+*
+!*/
+!*.*
+
+# 4. Whitelist only your C++ source files and documentation
+!**/*.cpp
+!**/*.md
+!.gitignore
