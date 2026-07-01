@@ -27,17 +27,23 @@ int size;
     cin >> size;
     
     vector<int> input(size);
-    cout << "Enter " << size << " elements: ";
+    cout << "Enter the elements: ";
     for(int i = 0; i < size; i++){
         cin >> input[i];
     }
     int k;
     cout << "Enter the value of k: ";
     cin >> k;
+
     vector<int> result = solver.scale(input, k);
+
     cout << "Result :[ ";
+    int count=0;
     for (int num : result){
-        cout << num << " ";
+        cout << num;
+        if(count++ < result.size()-1){
+            cout << ",";
+        }
     }
     cout << "]" << endl;
     
