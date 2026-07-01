@@ -24,6 +24,7 @@ class structure{
         return ans;
     }
 };
+
 /* alternate way
 for (int i = 0; i < n; i++) {
             ans[2 * i] = nums1[i];     // Even positions: 0, 2, 4...
@@ -38,13 +39,13 @@ int main(){
     cin >> size;
     
     vector<int> input1(size);
-    cout << "Enter " << size << " elements for the first array: ";
+    cout << "Enter the elements for the first array: ";
     for (int i = 0; i < size; i++) {
         cin >> input1[i];
     }
     
     vector<int> input2(size);
-    cout << "Enter " << size << " elements for the second array: ";
+    cout << "Ente the elements for the second array: ";
     for (int i = 0; i < size; i++) {
         cin >> input2[i];
     }
@@ -53,7 +54,7 @@ int main(){
 
     cout << "Result: [ ";
     for (int num : result) {
-        cout << num << " ";
+        cout << num << ",";
     }
     cout << "]" << endl;
     return 0;
