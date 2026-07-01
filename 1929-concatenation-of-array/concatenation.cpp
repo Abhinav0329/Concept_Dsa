@@ -21,20 +21,30 @@ class structure{
     }
 };
 
+/*
+we can use this also:-
+   for(int i=0;i<n*3;i++){
+        ans[i]=nums[i%n];
+       }
+*/
+
 int main(){
     structure solver;
+
     int size;
-    cout << "Enter the number of elements: ";
+    cout << "Enter the size: ";
     cin >> size;
+
     vector<int> input(size);
-    cout << "Enter " << size << " integers separated by spaces or newlines: " << endl;
+    cout << "Enter the elements: ";
     for(int i = 0; i < size; i++) {
         cin >> input[i]; 
     }
     vector<int> result = solver.threetimesconcatenation(input);
+
     cout << "Result: [ ";
    for(int num : result) {
-        cout << num << " ";
+        cout << num << ",";
     }
     cout << "]" << endl;
     return 0;
