@@ -25,7 +25,9 @@ int main(){
     int size;
     cout << "Enter the size: ";
     cin >> size;
+
     vector<int> input(size);
+    cout << "Enter the elements: ";
     for(int i =0;i<size;i++){
         cin >> input[i];
     }
@@ -37,9 +39,13 @@ int main(){
     vector<int> result = solver.rotation(input,r);
 
     cout << "Result :[ ";
-        for (int num :result){
-            cout << num << " ";
+    int count=0;
+     for (int num :result){
+        cout << num;
+        if(count++ < result.size()-1){
+            cout << ",";
         }
-        cout << "]" << endl;
-        return 0;
     }
+    cout << "]" << endl;
+    return 0;
+}
