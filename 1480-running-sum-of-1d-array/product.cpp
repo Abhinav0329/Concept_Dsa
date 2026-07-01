@@ -26,18 +26,26 @@ nums[i] *= nums[i-1];
 */
 int main(){
     structure solver;
+
     int size;
-    cout << "Enter the number of elements: ";
+    cout << "Enter the size: ";
     cin >> size;
+
     vector<int> input(size);
-    cout << "Enter " << size << " integers separated by spaces or newlines: " << endl;
+    cout << "Enter the elements: ";
     for(int i = 0; i < size; i++) {
         cin >> input[i]; 
     }
+
     vector<int> result = solver.product(input);
-    cout << "Result: [ ";
-   for(int num : result) {
-        cout << num << " ";
+
+    cout << "Result: [";
+    int count=0;
+    for(int num : result){
+        cout << num;
+        if(count++ < result.size()-1){
+            cout << ",";
+        }
     }
     cout << "]" << endl;
     return 0;
